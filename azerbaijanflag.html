@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azerbaijan Flag</title>
+ <style>
+
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flag{
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blue{
+  background-color: #00b5e2;
+  flex: 1;
+}
+
+.red{
+  background-color: #ef3440;
+  flex: 1;
+}
+
+.green{
+  background-color: #509e2f;
+  flex: 1;
+}
+
+.emblem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.crescent::before, .crescent::after{
+  content: "";
+  position: absolute;
+  border-radius: 1000px;
+  margin-left: 530px;
+}
+
+.crescent::before{
+  width: 180px;
+  height: 180px;
+  left: 50px;
+  top: 40px;
+  box-shadow: -13px 0 0 10px white;
+}
+
+.crescent::after{
+  width: 100px;
+  height: 100px;
+  left: 80px;
+  top: 80px;
+  box-shadow: -13px 0 0 10px #ef3440;
+}
+
+.star8{
+  width: 0px;
+  height: 40px;
+  margin-top: 80px;
+}
+
+.star8 .circle{
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(100% 50%,74.02% 59.95%,85.36% 85.36%,59.95% 74.02%,50% 100%,40.05% 74.02%,14.64% 85.36%,25.98% 59.95%,0% 50%,25.98% 40.05%,14.64% 14.64%,40.05% 25.98%,50% 0%,59.95% 25.98%,85.36% 14.64%,74.02% 40.05%);
+  background-color: white;
+}
+
+</style>
+</head>
+<body>
+  <div class="flag">
+    <div class="blue"></div>
+    <div class="red">
+        <div class="emblem">
+            <div class="crescent"></div>
+            <div class="star8">
+              <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="green"></div>
+</div>
+</body>
+</html>
